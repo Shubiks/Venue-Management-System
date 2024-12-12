@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-image: url("bg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: #cac6db;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+body {
+    background: #cac6db;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #7163BA;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #ffffff;
+    color: #7163BA;
+}
+.search-bar{
+    height:30px;
+    display:flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #F2F2F2 ;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 12px rgba(113, 99, 186, 0.4);
+    
+}
+.search-bar:hover input{
+    width: 200px;
+}
+.search-bar input{
+    width:0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.upcoming-events {
+text-align:center;
+}
+.centered-heading {
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+  }
+
+
+.event-container {
+display: flex;
+justify-content: center;
+align-items:center;
+flex-wrap:wrap;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+grid-gap: 40px; 
+padding: 20px; 
+}
+
+.event {
+width: 300px;
+margin: 30px;
+padding: 20px;
+height: 270px;
+background-color:  #f9fbfb;
+box-shadow: 0 0 5px #f6f4f41a;
+text-align: center;
+border-radius: 5px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+padding: 15px;
+transition: transform 0.3s ease; 
+}
+.event:hover{
+    background:  #f6f6f9;
+    transform: translateY(-10px);
+}
+.event img{
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;  
+}
+button{
+    width: 100px;
+      margin: 20px;
+      margin-left: 45px;
+      height: 9%;
+      width:70%;
+      border-radius: 20px;
+      background-color: #7163BA;
+      border: 0;
+      color: white;
+}
+#NEWEvent-form {
+    position:absolute; 
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    z-index: 10; 
+  }
+  
+  #NEWEvent-form h2 {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  #NEWEvent-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #NEWEvent-form input,
+  #NEWEvent-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  #NEWEvent-form button[type="submit"] {
+    background-color: #b38edd; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #NEWEvent-form button[type="submit"]:hover {
+    background-color: #7e5ac2;
+  }
+  
+  
+  .close-form-icon {
+    display: block; 
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    font-size: 20px;
+    color: #ccc; 
+    text-decoration: none;
+  }
+  
+  .close-form-icon:hover {
+    color: #999; 
+  }  
+  #AddNew {
+    background-color: #7e5ac2; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 20px 10px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button inline-block */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+    width: 100%;
+  }
+  
+  #AddNew:hover {
+    transform: translateY(-5px); 
+  }

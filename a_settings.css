@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #7163BA;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #ffffff;
+    color: #7163BA;
+}
+
+.search-bar {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #F2F2F2;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 12px rgba(113, 99, 186, 0.4);
+}
+
+.search-bar:hover input {
+    width: 200px;
+}
+
+.search-bar input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+:root {
+    --background-color: #cac6db;
+    --text-color: #000000;
+    --form-background: #f2f2f2;
+    --form-shadow: rgba(161, 127, 240, 0.288);
+    --button-background: #7163BA;
+    --button-hover: #7e5ac2;
+    --input-border: #ccc;
+}
+
+.dark-theme {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --form-background: #444444;
+    --form-shadow: rgba(50, 50, 50, 0.5);
+    --button-background: #555555;
+    --button-hover: #777777;
+    --input-border: #777777;
+}
+
+.settings-section {
+    width: 50%;
+    margin: 100px auto;
+    background-color: var(--form-background);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px var(--form-shadow);
+}
+
+.settings-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--form-background);
+}
+
+.form-group.dark-theme {
+    align-items: center;
+}
+
+.form-group.dark-theme input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--button-background);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+.help-faq {
+    margin-top: 30px;
+}
+
+.help-faq h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.help-faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help-faq ul li {
+    margin-bottom: 10px;
+}
+
+.help-faq ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.help-faq ul li a:hover {
+    text-decoration: underline;
+}
+/* Existing CSS code */
+
+.faq-content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    background-color: var(--form-background);
+}
+
+.faq-content h4 {
+    margin-bottom: 10px;
+}
+
+.faq-content p, .faq-content ol, .faq-content ul {
+    margin-bottom: 10px;
+}
+
+.faq-content ul, .faq-content ol {
+    padding-left: 20px;
+}
+
+
+.faq-content ul, .faq-content ol {
+    padding-left: 20px;
+}
